@@ -207,9 +207,10 @@ class CrudController extends Controller
             'output' => $output,
             'css_files' => $css_files,
             'js_files' => $js_files,
-            'tambahan' => "<script>window.addEventListener('gcrud.form.modal-close', () => {
-                window.location.replace('". route('crudmenu') ."');
-            });</script>",
+            // 'tambahan' => "<script>window.addEventListener('gcrud.form.modal-close', () => {
+            //     window.location.replace('". route('crudmenu') ."');
+            // });</script>",
+            'tambahan' => "",
             'judul' => "Manajemen Menu",
             'menu' => $postMenu,
             'aplikasi' => $postAplikasi,
@@ -284,9 +285,10 @@ class CrudController extends Controller
             'output' => $output,
             'css_files' => $css_files,
             'js_files' => $js_files,
-            'tambahan' => "<script>window.addEventListener('gcrud.form.modal-close', () => {
-                window.location.replace('". route('crudaplikasi') ."');
-            });</script>",
+            // 'tambahan' => "<script>window.addEventListener('gcrud.form.modal-close', () => {
+            //     window.location.replace('". route('crudaplikasi') ."');
+            // });</script>",
+            'tambahan' => "",
             'judul' => "Manajemen Aplikasi",
             'menu' => $postMenu,
             'aplikasi' => $postAplikasi,

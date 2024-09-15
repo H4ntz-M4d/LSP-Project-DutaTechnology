@@ -1,7 +1,8 @@
 <?php
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use GroceryCrud\Core\GroceryCrud;
+use Symfony\Component\VarDumper\VarDumper;
 
 class CustomersController extends Controller
 {
@@ -66,5 +67,13 @@ class CustomersController extends Controller
             'output' => $output,
             'js_files' => $js_files
         ]);
+    }
+    
+    public function login()
+    {
+        $postMenu = DB::select('SELECT * FROM migrations');
+        foreach($postMenu as $r){
+            var_dump($r->migration);
+        }
     }
 }

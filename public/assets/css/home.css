@@ -1,0 +1,7 @@
+.contain{
+    max-width: 70%;
+    margin: 0 auto; /* Horizontal centering */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
